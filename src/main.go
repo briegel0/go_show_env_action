@@ -5,8 +5,9 @@ import (
   )
   
   func main() {
-    val := githubactions.GetInput("val")
-    if val == "" {
-      githubactions.Fatalf("missing 'val'")
+    val := githubactions.GetInput("showGithubVars")
+    if val != "true" {
+      githubactions.Fatalf("missing 'showGithubVars'")
     }
+    githubactions.setEnv("myOutput","billKey=XXX")
   }
