@@ -9,5 +9,5 @@ import (
     if val != "true" {
       githubactions.Fatalf("missing 'showGithubVars'")
     }
-    githubactions.setEnv("myOutput","billKey=XXX")
+    githubactions.SetEnv("myOutput","billKey=XXX")
   }
