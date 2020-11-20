@@ -136,6 +136,8 @@ import (
        keyArray := strings.Split(valApp, ",")
        for i, s := range keyArray {
 
+        fmt.Println(i, s)
+
         output += s + "="      
 
         val2 := os.Getenv(s)
