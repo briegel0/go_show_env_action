@@ -9,10 +9,13 @@ import (
   func main() {
     val := githubactions.GetInput("showGithubVars")
     output := ""
+
+    newLineEsc := "\n"
+
     if val == "true" {
 
       // newLineEsc := "%0A"
-      newLineEsc := "\n"
+      //newLineEsc := "\n"
 
       output += " CI="
 
