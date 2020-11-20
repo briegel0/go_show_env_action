@@ -14,7 +14,7 @@ import (
       val2 := githubactions.GetInput("GITHUB_WORKFLOW")
       output += val2 + newLineEsc
 
-      val2 := githubactions.GetInput("GITHUB_RUN_ID")
+      val2 = githubactions.GetInput("GITHUB_RUN_ID")
       output += val2 + newLineEsc      
 
     }
