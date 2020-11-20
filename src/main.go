@@ -1,6 +1,7 @@
 package main
 
 import (
+    "os"
     "github.com/sethvargo/go-githubactions"
   )
   
