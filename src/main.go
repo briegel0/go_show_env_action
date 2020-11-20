@@ -11,11 +11,15 @@ import (
 
       newLineEsc := "%0A"
 
-      val2 := githubactions.GetInput("GITHUB_WORKFLOW")
-      output += val2 + newLineEsc
+      output += " one "
 
-      val2 = githubactions.GetInput("GITHUB_RUN_ID")
-      output += val2 + newLineEsc      
+      val2 := githubactions.GetInput("GITHUB_WORKFLOW")
+      output += val2 
+
+      output += " two "
+
+      //val2 = githubactions.GetInput("GITHUB_RUN_ID")
+      //output += val2 + newLineEsc      
 
     }
     githubactions.SetOutput("myOutput",output)
