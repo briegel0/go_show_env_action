@@ -13,12 +13,12 @@ import (
 
       output += " one "
 
-      val2 := githubactions.GetInput("GITHUB_WORKFLOW")
+      val2 := os.Getenv("GITHUB_WORKFLOW")
       output += val2 
 
       output += " two "
 
-      //val2 = githubactions.GetInput("GITHUB_RUN_ID")
+      //val2 = os.Getenv("GITHUB_RUN_ID")
       //output += val2 + newLineEsc      
 
     }
