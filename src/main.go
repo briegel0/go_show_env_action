@@ -125,5 +125,22 @@ import (
 
 
     }
+
+    // any app env's ? 
+    valApp := githubactions.GetInput("listOfAppEnvVars")
+    if len(valApp) > 0 { 
+       keyArray := strings.Split(valApp, ",")
+       for i, s := range keyArray {
+
+        output += s + "="      
+
+        val2 := os.Getenv(s)
+        
+        output += val2 + newLineEsc   
+
+       }       
+    }
+
+
     githubactions.SetOutput("myOutput",output)
   }
