@@ -10,7 +10,8 @@ import (
     output := ""
     if val == "true" {
 
-      newLineEsc := "%0A"
+      // newLineEsc := "%0A"
+      newLineEsc := "\n"
 
       output += " GITHUB_WORKFLOW="
 
