@@ -3,6 +3,7 @@ package main
 import (
     "os"
     "strings"
+    "fmt"
     "github.com/sethvargo/go-githubactions"
   )
   
