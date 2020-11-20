@@ -9,7 +9,7 @@ import (
     output := ""
     if val == "true" {
 
-      newLineEsc := "%0A"
+      //newLineEsc := "%0A"
 
       output += " one "
 
