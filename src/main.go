@@ -2,6 +2,7 @@ package main
 
 import (
     "os"
+    "strings"
     "github.com/sethvargo/go-githubactions"
   )
   
