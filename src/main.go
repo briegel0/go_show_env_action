@@ -10,17 +10,20 @@ import (
     output := ""
     if val == "true" {
 
-      //newLineEsc := "%0A"
+      newLineEsc := "%0A"
 
-      output += " one "
+      output += " GITHUB_WORKFLOW="
 
       val2 := os.Getenv("GITHUB_WORKFLOW")
       output += val2 
 
-      output += " two "
+      output += newLineEsc
 
-      //val2 = os.Getenv("GITHUB_RUN_ID")
-      //output += val2 + newLineEsc      
+      output += " GITHUB_RUN_ID="      
+
+      val2 = os.Getenv("GITHUB_RUN_ID")
+      
+      output += val2 + newLineEsc      
 
     }
     githubactions.SetOutput("myOutput",output)
